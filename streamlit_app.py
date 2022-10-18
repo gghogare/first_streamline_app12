@@ -33,4 +33,6 @@ streamlit.text(fruityvice_response.json()) #just writes the data to the screen
 # take the json version of the response 
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # output it the screen as a table
+
+import snowflake.connector
 streamlit.dataframe(fruityvice_normalized)
